@@ -1,9 +1,16 @@
 #include <iostream>
 using namespace std; 
 
-void subset(int *arr, int ind1, int ind2, int ind3,  int n, int size) {
-    if (ind1 == n-2) return; 
+void subset(int *arr, int sum, int ind, int size) {
+    if (ind == size) {
+        cout << sum << endl; 
+        return; 
+    } 
 
+    sum += arr[ind];
+    subset(arr, sum, ind + 1, size); 
+    sum -= arr[ind]; 
+    subset(arr, sum, ind + 1, size); 
 }
 
 int main(){
@@ -13,5 +20,5 @@ int main(){
     for (int i = 0; i < n; i++) {
         cin >> arr[i]; 
     }
-    subset(arr, 0, 1, 2,   n, 3); 
+    subset(arr, 0, 0, n); 
 }
