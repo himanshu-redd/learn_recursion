@@ -14,3 +14,4 @@
 9. [Print just one subsequence with sum k. ](print_one_subseq_with_sum.cpp)
 10. [print no of subsequences with sum k](no_of_subseq_with_sum_n.cpp)
 12. [Merge sort](merge_sort.cpp)
+13. [Quick Sort](quick_sort.cpp)
