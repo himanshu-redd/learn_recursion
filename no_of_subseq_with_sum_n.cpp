@@ -3,6 +3,10 @@ using namespace std;
 
 int noOfSubseqs(int *arr, int ind, int size, int sum, int target) {
 
+    if (sum > target) { 
+        return 0; 
+    }
+
     if (ind == size) {
         if (sum == target) {
             return 1; 

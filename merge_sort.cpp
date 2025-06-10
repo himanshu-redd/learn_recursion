@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std; 
 
+// TC: nlogn
 void merge(int *arr, int left, int mid, int right) {
 
     int size = right - left + 1; 
