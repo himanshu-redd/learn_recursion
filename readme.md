@@ -12,3 +12,4 @@
 7. [String subsequence](string_subsequence.cpp)
 8. [sum of all the subsequences](subset_sum.cpp)
 9. [Print just one subsequence with sum k. ](print_one_subseq_with_sum.cpp)
+10. [print no of subsequences with sum k](no_of_subseq_with_sum_n.cpp)
